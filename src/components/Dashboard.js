@@ -54,16 +54,6 @@ function Dashboard() {
                             <span className="material-icons">inbox</span>
                             <h4>Primary</h4>
                         </div>
-
-                        <div className="section">
-                            <span className="material-icons">people</span>
-                            <h4>Social</h4>
-                        </div>
-
-                        <div className="section">
-                            <span className="material-icons">local_offer</span>
-                            <h4>Promotions</h4>
-                        </div>
                     </div>
 
                     <div className="emailList_list">
