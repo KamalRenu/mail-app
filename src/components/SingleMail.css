@@ -1,0 +1,250 @@
+.mail {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    align-items: center;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    height: 45px;
+    border-bottom: 1px solid skyblue;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .mail:hover {
+    box-shadow: 1px 1px 2px grey;
+  }
+  
+  .title-box {
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+  
+  .title-box .company {
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .fa-square {
+    padding-left: 10px;
+  }
+  .fa-star {
+    padding-left: 15px;
+  }
+  
+  .mail-text {
+    margin-left: 10px;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .mail-text-title {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .update-button {
+    width: 220px;
+    display: flex;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: none;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .update-button div {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    margin-right: 5px;
+    font-size: 1.1rem;
+    color: grey;
+  }
+  
+  .update-button div:hover {
+    border-radius: 100%;
+    background-color: rgb(224, 224, 224);
+  }
+  
+  /* Individual Mail Styling */
+  
+  .single-mail section {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .single-mail .btn-group {
+    display: flex;
+    border: 1px solid skyblue;
+  }
+  
+  .single-mail .btn-group span {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+  }
+  .single-mail .btn-group span:hover {
+    color: black;
+    border-radius: 100%;
+    background-color: rgb(236, 236, 236);
+  }
+  .single-mail .side-button {
+    display: flex;
+    margin-left: auto;
+  }
+  .single-mail .content-btn-group {
+    width: 58px;
+    border-radius: 5px;
+    background-color: rgb(204, 204, 204);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 4px;
+  }
+  .single-mail .content-btn-group div {
+    text-align: center;
+  }
+  .single-mail .content-btn-group div:hover {
+    background-color: rgb(46, 45, 45);
+    color: rgb(219, 219, 219);
+  }
+  
+  .single-mail .content-btn-group div:first-child {
+    width: 34px;
+  }
+  
+  .single-mail .content-btn-group div:last-child {
+    width: 23px;
+  }
+  .single-mail .content-btn-group2 {
+    display: flex;
+    margin-left: auto;
+    color: grey;
+  }
+  .single-mail .content-btn-group2 span {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .single-mail .content-btn-group2 span:hover {
+    border-radius: 100%;
+    background-color: rgb(236, 236, 236);
+    color: black;
+  }
+  .mail-heading .title {
+    font-size: 1.375rem;
+  }
+  
+  .mail-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Global  Styling valid for all */
+  .font-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .font-icon:hover {
+    border-radius: 100%;
+    background-color: rgb(201, 199, 199);
+  }
+  
+  /* .....................................*/
+  
+  .user-mail-header {
+    display: flex;
+  }
+  .user-mail-header1 span {
+    font-size: 0.8rem;
+  }
+  .user-mail-header2 {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .mail-box {
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    word-wrap: 1px;
+  }
+  
+  .mail-user img {
+    border-radius: 100%;
+  }
+  
+  /* Button Styling */
+  .btn-group-reply button {
+    padding: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid;
+    font-family: sans-serif;
+    color: grey;
+  }
+  .btn-group-reply button:hover {
+    background-color: rgb(240, 240, 240);
+  }
+  .btn-group-reply i {
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+  .btn-group-reply button:last-child {
+    margin-left: 30px;
+  }
+  
+  /* Search Page */
+  .search-page {
+    width: 680px;
+    height: 200px;
+    background-color: rgb(255, 253, 253);
+    position: absolute;
+    top: 60px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 5;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+  }
+  
+  .search-bar ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .final-design {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }

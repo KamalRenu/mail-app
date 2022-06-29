@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Sidebar from './Sidebar';
 import Topbar from './Topbar';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
     const [Mails, setMails] = useState([])
+    const [show, setShow] = useState(false);
+    const navigate = useNavigate();
     useEffect(() => {
         (async()=>{
             fetchUser()
@@ -29,7 +32,7 @@ function Dashboard() {
     let handleDelete = async (id) => {
         const token = window.localStorage.getItem("my_token")
         try {
-            let result = window.confirm("Are you sure do you wank to delete?")
+            let result = window.confirm("Are you sure do you want to delete?")
             if(result) {
                 await axios.delete(`https://gmail-clone-api.herokuapp.com/api/mailer/delete/${id}`,
                 {
@@ -59,11 +62,10 @@ function Dashboard() {
                     <div className="emailList_list">
                         {
                             Mails.map(elem => (
-                                <div className="emailRow">
+                                <div className="emailRow" onClick={() => {navigate(`/single-mail/${elem._id}`)}} onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
                                     <div className="emailRow_options">
                                         <input type="checkbox" />
                                         <span className="material-icons">star_border</span>
-                                        <span className="material-icons">label_important</span>
                                     </div>
                                     <h2 className="emailRow_title">{elem.email}</h2>
 
@@ -74,7 +76,7 @@ function Dashboard() {
                                         </h5>
                                     </div>
                                     <p className="emailRow_time">{elem.time}</p>
-                                    <span onClick={() => handleDelete(elem._id)} className="material-icons">delete</span>
+                                    {show? (<span onClick={() => handleDelete(elem._id)} className="material-icons">delete</span>) : ("")}
                                 </div>
                             ))
                         }

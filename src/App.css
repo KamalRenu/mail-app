@@ -189,7 +189,7 @@ body{
 .emailRow {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 40px;
   border-bottom: 1px solid whitesmoke;
   cursor: pointer;
   z-index: 999;
@@ -214,11 +214,12 @@ input{
   display: flex;
   flex: 0.8;
   align-items: center;
-  font-size: 10px;
+  font-size: 15px;
 }
 
-.emailRow_message h4{
-  width: 400px;
+.emailRow_message h5{
+  font-size: 15px;
+  width: 550px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
